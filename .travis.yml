@@ -1,9 +1,4 @@
 language: java
 
-addons:
-  sonarcloud:
-    organization: "wgancarz-github"
-    token:
-      secure: "mGJZysB30wCsqpShPoHrrsfdtY8sWmYyczjzgLuOx+fKz1b8Sb75C5MBDzXuJyvNGVoyzNi03B0ikKJMy94BwNI8zW8V6+4bEMCTCr2QErqJeVYYz08CiRe3c++3UtgKjjmd+qCxxGG4K4oo46fqGOW/Gm0KygX9gnFx/kYubxFdGVgXs591HGAV8QUsPlm4WUbM8rUtEEssAb3vvolCbxYFu3zsTSo1ogVps+Wq6J/+IJItrMJKnuEfUMbVk5184d2/tXF2M+KSNrgz6EZedK0lRm68XHrLUktXV8nsF7ueIA3KU/ACRigcUBlxmd0mx0nibz5k1ZP1mzF02fdbuYA8kgAisw0DGQ3EcNZW7QYRMeTSsIM6Zg4x76PNzCtZHpzQJaGqiV8EH0jVlVtr9DqLPadWZMpcQVbGbLFrJ0GDqyB9iz4/spEs8o23ih0jorMFIRqA5Iw7JXrejlfRqAbKnL2bLEpIunXK3W9lVbe7hbWLhyK44lLdEqhqSQGCZr/SR8AOFpd00wikHlY8kzIzUQx40nIhn668MQD4Mbrhz1nMdD5Gha1DnCoM11PSGC2Ji/45anAM/HwB//aYeTO0oHlMycUO7IeR6dz5Hpuyqbx9H0SM4fqUstOz0goAJ4F3APm3iNAFQIt8OdzkNMc1yjd563WwHIgByel4yi0="
-script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+jdk:
+  - openjdk11
