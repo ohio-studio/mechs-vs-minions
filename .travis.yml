@@ -9,8 +9,8 @@ addons:
     token:
       secure: "cIx+IumLbxOCP4ucahPtp0BcxDYHTsDf5c7D23yE5YdPXlfSdEiZwGIAbysOat4aToGW3VeqXLpSoCS8ZFt86RcfiA7hc3e7ETMMQqtf5/fghZXJjeIw8K1sdXx5y0aT4GY00+bohdH+ZHKVutAJJvXSlSuzWx+LNlniTeSqcTnA8DeTiqyJqvJCoOTlEg5MGPHZVWDAaJo8uSICpMOGC70ywBb0w7e6aJyLsK2W9QeAzf2moyWHmoxjYyl1lGB2KL40eRi2NajbgCz467kwuoQKjp+3tD77L5zvirjaWafoWj29pwlxu2riUUnqvSlaiFriEO7cBg9aEwCD84BrSMupd924+4NKKSjv653ySa85gpqEfA542ILbn8YjsmpbVSyMi2rl7SA3+yz7sfyp9mLYHlK32c1uZYByC5FMM81FuizIdp2gMIv3jaf2b9eVYyoJJn84Yjzx1Qk3bp9q8Lfcl08Ds3klekVltgmdlnPXD1qOh5wq8NLytyw2i1ISrQ8JN7hCtl9TN2+mCXOpEHcSjTOwmVtxdSPyqAZwC3R4uX7X4p0CiKPbqc4lDiABwKbbahnbf6EAuzqooFYvG6Ja84vkhtyGIK8rnVVByTMefTLVgKd4FGsx1nToEBZc72KhqI/maFtsNqZmSOfnuR6alVI1VganBSTfKVKGOd8="
 
-script:
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+#script:
+#  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
 
 cache:
   directories:
