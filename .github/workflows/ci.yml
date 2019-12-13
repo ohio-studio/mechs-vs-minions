@@ -1,4 +1,4 @@
-name: Java CI
+name: CI
 
 on: [push]
 
@@ -16,6 +16,11 @@ jobs:
     - name: Compile
       run: mvn -B test-compile --file pom.xml
     - name: Test
-      run: mvn -B test --file pom.xml
+      run: mvn -B org.jacoco:jacoco-maven-plugin:prepare-agent test --file pom.xml
     - name: Build Maven package
       run: mvn -B package --file pom.xml
+    - name: SonarCloud scan
+      run: mvn -B org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
