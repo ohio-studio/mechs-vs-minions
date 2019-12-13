@@ -14,7 +14,7 @@ class SquareTest
 		Square square = new Square(sideLength);
 
 		//when
-		int area = square.getSideLength();
+		int area = square.getArea();
 
 		//then
 		assertEquals(4, area);
