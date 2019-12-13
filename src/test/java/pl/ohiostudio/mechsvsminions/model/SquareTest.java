@@ -10,11 +10,11 @@ class SquareTest
 	public void shouldReturnCorrectArea()
 	{
 		//given
-		int sideLength = 2;
+		double sideLength = 2;
 		Square square = new Square(sideLength);
 
 		//when
-		int area = square.getArea();
+		double area = square.getArea();
 
 		//then
 		assertEquals(4, area);

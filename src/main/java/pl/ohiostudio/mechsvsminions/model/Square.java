@@ -2,29 +2,29 @@ package pl.ohiostudio.mechsvsminions.model;
 
 public class Square
 {
-	int sideLength = 0;
+	double sideLength = 0;
 
 	public Square()
 	{
 	}
 
-	public Square(final int sideLength)
+	public Square(final double sideLength)
 	{
 		this.sideLength = sideLength;
 	}
 
-	public int getSideLength()
+	public double getSideLength()
 	{
 		return sideLength;
 	}
 
-	public void setSideLength(final int sideLength)
+	public void setSideLength(final double sideLength)
 	{
 		this.sideLength = sideLength;
 	}
 
-	public int getArea()
+	public double getArea()
 	{
-		return sideLength ^ 2;
+		return Math.pow(sideLength, 2);
 	}
 }
